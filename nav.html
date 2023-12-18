@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Miss.Prachi Devram</title>
+        <link rel="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+        <title>Navigation bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            }
+        body {
+            background-color: rgb(5, 31, 72);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(25, 25, 83);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(138, 138, 245);
+            font-size: 1.01rem;
+        }
+        ul li ul.dropdown-content{
+            background-color: blueviolet;
+        }
+        ul li ul .dropdown-content li{
+            float: none;
+        }
+        
+        .left{
+            font-size: 1.5rem;
+            text-decoration: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prachi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="Home.html" id="homeLink">Home</a></li>
+                    <li><a href="/Prachi_Devram.pdf">My Resume</a></li>
+                    
+                    <!-- <li><a href="/">Education</a> -->
+                        <li><a href="education.html" id="educationLink">Education</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="education.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Skills</a> -->
+                        <li><a href="Skills.html" id="SkillsLink">Skills</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Skills.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Projects</a> -->
+                        <li><a href="Projects.html" id="ProjectsLink">Projects</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Projects.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <li><a href="#">About me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+</body>
+</html>
+

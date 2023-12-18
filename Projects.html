@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                }
+        body{
+            background-color: rgb(5, 31, 72);
+            color: white;
+            font-family: font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(25, 25, 83);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(138, 138, 245);
+            font-size: 1.01rem;
+        }
+        ul li ul.dropdown-content{
+            background-color: blueviolet;
+        }
+        ul li ul .dropdown-content li{
+            float: none;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .projects {
+            
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        #final-year-project {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-bottom: 30px; /* Adjust as needed */
+        }
+        
+        #final-year-project h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #ffd700; /* Highlight color for the section title */
+            margin-bottom: 10px; /* Space between section title and content */
+        }
+        
+        #final-year-project h3{
+            margin-top: 0;
+            color: aqua;
+        }
+        #final-year-project p{
+            margin-bottom: 10px;
+        }
+        .projects div {
+            flex: 1;
+        }
+
+        .projects > div {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-bottom: 30px; /* Add margin bottom for spacing between projects */
+        }
+        
+        .projects > div h2 {
+            font-size: 24px;
+            color: #ffd700; /* Highlight color for project names */
+            margin-bottom: 10px; /* Space between project name and content */
+        }
+        
+        .projects h2 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+
+        .projects h3{
+            margin-top: 0;
+            color: aqua;
+        }
+        .projects p{
+            margin-bottom: 10px;
+        }
+        .projects ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .projects ul li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .projects ul li p {
+            margin: 5px 0;
+            margin-bottom: 10px;
+            
+        }
+
+        .projects ul li img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .projects ul li video-list {
+            max-width: 80%;
+            height: auto;
+            border-radius: 2px;
+            padding: 10px;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prachi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html" id="homeLink">Home</a></li>
+                  
+                    <li><a href="./Prachi_Devram.pdf">My Resume</a></li>
+                    
+                    <!-- <li><a href="/">Education</a> -->
+                        <li><a href="education.html" id="educationLink">Education</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="education.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Skills</a> -->
+                        <li><a href="Skills.html" id="SkillsLink">Skills</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Skills.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Projects</a> -->
+                        <li><a href="Projects.html" id="ProjectsLink">Projects</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Projects.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <li><a href="#">About me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="nav"></div>
+        <section id="final-year-project" class="final-year-project">
+            <h2>Voice Assistant of ChatGPT</h2>
+            <h3>Final Year Project 2023-24</h3>
+            <p><b style="color:rgb(175, 236, 216);">Objective:</b> 1. To obtain voice output from ChatGPT by giving voice input.
+                2. Integration artificial intelligence with Electronics using ESP32.</p>
+
+            <p><b style="color:rgb(175, 236, 216);">Technologies:</b> 1. Fetching data from ChatGPT using API with Postman Application.
+                2. Speech to text Conversion using Goggle STT services with ESP32.
+                3. Text To Speech Conversion using Google TTS services with ESP32.</p>
+
+            <p><b style="color:rgb(175, 236, 216);">Applications:</b> 1. Healthcare, to Assist with medical inquiries, medication reminders, and even offer basic health advice.
+                2. Education, can act as virtual tutors, answering questions and providing explanations.</p>
+        </section>
+
+        <section class="Core Projects">
+            <!-- Detailed technical skill information -->
+            <h2>A. Embeded Projects</h2>
+
+            <div class="projects">
+                <div>
+                    <h2>1. Fastest Line Following Robot </h2>
+                    <h3>Attained 4th international rank at WRC, Delhi 2022</h3>
+                    <p><b style="color:rgb(175, 236, 216);">Objective:</b> Preparing a robot which follows black line.</p>
+                    <p><b style="color:rgb(175, 236, 216);">Working Principle:</b> PID Algorithm</p>
+                    <p><b style="color:rgb(175, 236, 216);">Challenges Faced: </b></p>
+                        <p>We had to complete our project within one month for the competition. 
+                        Within that month we had to order all compoents, test them and apply
+                        working prininciple of PID algorithm.</p>
+                        
+                        <p>First Challenge we faced was unavalability of sensor on official website.
+                            So we ordered it from other website which was not trusted but we had to take risk.
+                        </p>
+                    
+                        <p>Second Challenge was Designing the arena. It was wrongly designed at first and was in small size. 
+                            We then started designing arena with larger diamensions 
+                        </p>
+
+                        <p>Then, after all mounting on PCB board our robot was not working beaucse by mistake it was fallen down from table
+                            There was connection loss between pins, we corrected it again
+                        </p>
+
+                        <p>Main Challenge was testing values of kp, ki and kd for accurate line Following. Our senior invested a lot of time to test different values 
+                            finally we reached some values that are approriate for our sensor and finalised them.
+                        </p>
+
+                    <p><b style="color:rgb(175, 236, 216);">Solution: </b>Finally, we reached at successful opearation robot which was accurately following the balck line.</p>
+                    
+                    <p><b style="color:rgb(175, 236, 216);">Applications:</b> Can be used in Industrial automation, Home Automation and at restaurants for serving food.</p>
+
+                    <p></p>
+                    <ul class="video-list">
+                        <li>
+                            <p>Glimps from Event</p>
+                            <video width="480" height="300" controls>
+                                <source src="Delhi.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </li>
+                        <li>
+                            <p>Symatics of Robot</p>
+                        <video width="480" height="300" controls>
+                            <source src="LFR.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        </li>
+                    </ul>
+                    <ul class="image-list">
+                        <li>
+                            <p>Certificate of Event </p>
+                            <img src="certificate.png" alt="teamwork Image" style="width: 500px;">
+                        </li>
+                        <li>
+                            <p>Our Team</p>
+                            <img src="falcon.jpg" alt="teamwork Image" style="width: 400px;">
+                        </li>
+                    </ul>
+                    <h3>My Delhi Experience</h3>
+                    <p>Travelling to an unknown city for the first time with our seniors for a project competition was an incredible experience. 
+                        Exploring Delhi's most iconic landmarks such as 'India Gate', 'UPSC Bhavan', 'Red Fort', and indulging in shopping at 'Sarojini Nagar' 
+                        added to the richness of our visit.
+                    </p>                    
+                        <p>Along with these amazing experiences, we also encountered new challenges in the new city. We faced difficulties finding a hotel for our team of 14, 
+                            sourcing good food, locating transportation to travel to the event venue and other places we wished to visit. During the event, we discovered 
+                            that our registration was incomplete; having completed only one step, we were initially not allowed to participate. However, we made considerable 
+                            efforts to convince the organizers, and eventually, they permitted our participation.
+                        </p>
+                        <p>Despite encountering numerous problems and challenges, we never lost hope and gave our best. Our team spirit and determination played a crucial 
+                            role in achieving the 4th international rank at the World Robotics Championship organized by Technoxian in Delhi.
+                        </p>
+                        <p>I learned how important it is to have faith in the team and work together for its success. There was a participant from Uzbekistan who did not 
+                            have a team; he encountered numerous problems, and his robot was not working. We extended our help as much as possible, but due to language barriers 
+                            and a lack of motivation, he couldn't clear the first round and was eliminated. This situation made me realize the significance of having a team 
+                            for competitions like this.
+                        </p>
+
+
+                </div>
+                <div>
+                    <h2>2. Smart Door locking System </h2>
+                    <h3>TE mini project</h3>
+                    <p><b style="color:rgb(175, 236, 216);">Objective:</b> To make efficient and secure door locking system</p>
+                    <p><b style="color:rgb(175, 236, 216);">Technologies:</b> Arduino IDE, Biometric and Matrix Keypad.</p>
+                    <p><b style="color:rgb(175, 236, 216);">Challenges Faced: </b></p>
+                    <p>While working on our project, our primary objective was to create a dual-step authentication system that would only grant access
+                        when an authorized person entered. We integrated both a matrix keypad and biometric scanner for this purpose.
+                        However, during the practical implementation, we encountered several issues.
+                    </p>
+                    <p>Initially, we found that the door could be opened separately using either the password or the biometric scan,
+                        whereas our intention was to have a two-step verification process—first, the password, followed by the fingerprint.
+                        Despite our attempts, we couldn't achieve this desired sequence.
+                    </p>
+                    <p>Additionally, we faced minor challenges such as configuring the LED connections with the Arduino and adjusting the contrast. 
+                        We also encountered issues with downloading necessary libraries and uploading the code into the Arduino board.
+                        However, through persistent effort and a trial-and-error approach, we managed to overcome these hurdles.
+                    </p>
+                    <p>Ultimately, after troubleshooting and refining the system, we successfully resolved these issues, and the project functioned as intended.</p>
+
+                    <p><b style="color:rgb(175, 236, 216);">Applications:</b> Can be used at various places like chemical industries, Homes, Colleges, jewellery shops, etc where authorized person have permission to enter door.</p>
+                    <ul class="video-list">
+                        <li>
+                            <p>Demonstration</p>
+                            <video width="480" height="300" controls>
+                                <source src="door.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </li>
+                        <li>
+                            <p>Presentation</p>
+                        <video width="480" height="300" controls>
+                            <source src="present.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        </li>
+                    </ul>
+                    <ul class="image-list">
+                        <li>
+                            <p>Certificate of Event </p>
+                            <img src="c2.jpg" alt="TechnoPHILIA ,MIT alandi" style="width: 500px;">
+                        </li>
+                        <li>
+                            <p>Prototype</p>
+                            <img src="m1.jpg" alt="teamwork Image" style="width: 400px;">
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>3. DIY development Board Of Arduino ATMega328P </h2>
+                    <h3>Eyantra Lab Activity 2021</h3>
+                    <p><b style="color:rgb(175, 236, 216);">Objective: </b>Developed an Arduino Board using ATmega328P which works same as Arduino uno</p> 
+                    <p><b style="color:rgb(175, 236, 216);">Work: </b>Done soldering, handled required electronic components and studied data sheet of ATmega328P</p>
+                    <p><b style="color:rgb(175, 236, 216);">Challenges Faced: </b></p>
+                    <p>Absolutely, here's a simplified version:
+
+                        "Since this was our first project, everything felt brand new and exciting. 
+                        Soldering neatly was tough at first, but luckily, we had a senior to show us the ropes. 
+                        They patiently guided us through each step, teaching us how to read datasheets, make connections, 
+                        and even create our own Arduino board. Their help was crucial, especially when everything seemed unfamiliar. 
+                        With their support, we managed to tackle challenges that initially felt overwhelming."</p>
+                    <ul class="video-list">
+                        <li>
+                            <p>Rotating Servo motor on Arduino DIY Board</p>
+                            <video width="480" height="300" controls>
+                                <source src="arduino.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </li>
+                </div>
+                
+                    
+        <section class="Software Projects">
+            <!-- Detailed non-technical skill information -->
+            
+        </section>
+    </main>
+
+</body>
+</html>

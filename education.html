@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            }
+    body{
+        background-color: rgb(5, 31, 72);
+        color: white;
+        font-family: font-family: 'Poppins', sans-serif;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(25, 25, 83);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+        color: rgb(138, 138, 245);
+        font-size: 1.01rem;
+    }
+    ul li ul.dropdown-content{
+        background-color: blueviolet;
+    }
+    ul li ul .dropdown-content li{
+        float: none;
+    }
+    
+    .left{
+        font-size: 1.5rem;
+    }
+    .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items:center ;
+        margin: 80px 0;
+    }
+    .firstSection > div{
+        width: 30%;
+    }
+    .rightSection img{
+        width: 80%;
+        margin: 20px 0;
+    }
+    .leftSection{
+        font-size: 3rem;
+        margin: 30px 0;
+        align-items: center;
+    }
+    .purple{
+        color: blueviolet;
+    }
+    #element{
+        color: blueviolet;
+    }
+    footer{
+        background-color: #0e0e1a;
+    }
+    .footer{
+        display: flex;
+        padding: 0px 0px;
+        justify-content: space-evenly;
+    }
+    .footer ul{
+        list-style: none;
+    
+    }
+    .footer > div{
+        width: 223px;
+    }
+    footer .footer-rights{
+        text-align: center;
+        color: grey;
+        padding: 12px;
+    }
+    
+    ul li .dropdown-content {
+        display: none;
+        background-color: rgb(35, 35, 135);
+    }
+    
+    /* Style for list items within the dropdown content */
+    ul li .dropdown-content li {
+        float: none;
+    }
+    
+    /* When hovering over the parent list item, display the dropdown content */
+    ul li:hover .dropdown-content {
+        display: block; /* or inline, depending on your layout */
+    }
+
+
+    .educationDetails {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .educationDetails img {
+        text-align: center;
+        width: 490px;
+        margin-right: 20px;
+    }
+    .educationDetails div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Style for map links */
+    .educationDetails a {
+        color: #4CAF50; /* Change this to the desired color */
+        text-decoration: none;
+        transition: color 0.3s ease; /* Adding a smooth color transition */
+    }
+
+    .educationDetails a:hover {
+        color: #45a049; /* Change this to the desired color on hover */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prachi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html" id="homeLink">Home</a></li>
+                 
+                    <li><a href="./Prachi_Devram.pdf">My Resume</a></li>
+                    
+                    <!-- <li><a href="/">Education</a> -->
+                        <li><a href="education.html" id="educationLink">Education</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="education.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Skills</a> -->
+                        <li><a href="Skills.html" id="SkillsLink">Skills</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Skills.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Projects</a> -->
+                        <li><a href="Projects.html" id="ProjectsLink">Projects</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Projects.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <li><a href="#">About me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="educationDetails">
+            <!-- Detailed education information -->
+            <div class="educationDetails">
+                <img src="college_img.png">
+                <div>
+                    <h3>BE in Electronics and Telecommunication Engineering</h3>
+                    <p>Government college of Engineering and Research, Avasari kh.</p>
+                    <p>year : 2024</p>
+                    <a href="https://maps.app.goo.gl/yQm8ZhMazBRFN63AA" target="_blank">View College Location</a>
+                </div>
+            </div>
+            <div class="educationDetails">
+                <img src="college_img.png">
+                <div>
+                    <h3>Higher Secondary Certificate (HSC)</h3>
+                    <p>Maharastra Higher Secondary Vidyalaya, Barshi.</p>
+                    <p>Year: 2020</p>
+                    <a href="https://maps.app.goo.gl/wMaqjWrzvZcPys8bA" target="_blank">View College Location</a>
+                </div>
+            </div>
+            <div class="educationDetails">
+                <img src="college_img.png">
+                <div>
+                    <h3>Secondary School Certificate (SSC)</h3>
+                    <p>Jijamata Kanya Prashala, Barshi.</p>
+                    <p>Year: 2018</p>
+                    <a href="https://maps.app.goo.gl/m3S1z1VyrVQXXBpz7" target="_blank">View School location</a>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>

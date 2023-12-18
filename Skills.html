@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                }
+        body{
+            background-color: rgb(5, 31, 72);
+            color: white;
+            font-family: font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(25, 25, 83);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(138, 138, 245);
+            font-size: 1.01rem;
+        }
+        ul li ul.dropdown-content{
+            background-color: blueviolet;
+        }
+        ul li ul .dropdown-content li{
+            float: none;
+        }
+        
+        body {
+            background-color: rgb(5, 31, 72);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .skills {
+            display: flex;
+            gap: 100px;
+            margin-bottom: 20px;
+        }
+
+        
+        .skills div {
+            flex: 1;
+        }
+
+        .skills h2 {
+            margin-top: 0;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .skills ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills ul li i {
+            margin-right: 10px;
+        }
+
+        .skills ul li .image-list {
+            display: flex;
+            gap: 100px;
+            align-items: center;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prachi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html" id="homeLink">Home</a></li>
+                    
+                    <li><a href="./Prachi_Devram.pdf">My Resume</a></li>
+                    
+                    <!-- <li><a href="/">Education</a> -->
+                        <li><a href="education.html" id="educationLink">Education</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="education.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Skills</a> -->
+                        <li><a href="Skills.html" id="SkillsLink">Skills</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Skills.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Projects</a> -->
+                        <li><a href="Projects.html" id="ProjectsLink">Projects</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Projects.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <li><a href="#">About me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="technicalSkills">
+        <!-- Detailed technical skill information -->
+        <h2>(A) Technical Skills</h2>
+        <div class="skills">
+            <div>
+                <h3>1. Web Development</h3>
+                <ul>
+                    <li><i class="fab fa-html5" style="color: #E34F26;"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt" style="color: #264DE4;"></i> CSS</li>
+                </ul>
+            </div>
+            <div>
+                <h3>2. Programming Languages</h3>
+                <ul>
+                    <!-- <li><i class="fab fa-cuttlefish" style="color: #A8B9CC;"></i> C</li> -->
+                    <li><i class="fab fa-java" style="color: #5382A1;"></i> Java</li>
+                    <!-- <li><i class="fab fa-python" style="color: #3776AB;"></i> Python</li> -->
+                </ul>
+            </div>
+            <div>
+                <h3>3. Cloud Computing</h3>
+                <ul>
+                    <li><i class="fab fa-aws" style="color: #FF9900;"></i> Deployment methods</li>
+                    <li><i class="fab fa-microsoft" style="color: #008AD8;"></i> Services</li>
+                </ul>
+            </div>
+            <div>
+                <h3>4. DBMS</h3>
+                <ul>
+                    <li><i class="fas fa-database" style="color: #008B8B;"></i> SQL</li>
+                </ul>
+            </div>
+            <div>
+                <h3>5. Core Skills</h3>
+                <ul>
+                    <li><i class="fas fa-microchip" style="color: #CD5C5C;"></i> PLC</li>
+                    <li><i class="fas fa-microchip" style="color: #CD5C5C;"></i> Arduino</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="nonTechnicalSkills">
+        <!-- Detailed non-technical skill information -->
+        <h2>(B) Interpersonal Skills</h2>
+        <div class="skills">
+            <ul>
+                <li>
+                    <h3>1. Teamwork</h3>
+                    <ul class="image-list">
+                        <li>
+                            <p>Certificate distribution in Blood donation camp </p>
+                            <img src="t3.jpg" alt="teamwork Image" style="width: 220px;">
+                        </li>
+                        <li>
+                            <p>Working on project of Fastest Line Following Robot</p>
+                            <img src="t2.jpg" alt="teamwork Image" style="width: 400px;">
+                        </li>
+                        <li>
+                            <p>Cleanliness drive at NSS camp</p>
+                            <img src="teamwork_img.jpg" alt="teamwork Image" style="width: 360px;">
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <h3>2. Presentation skills</h3>
+                    <ul class="image-list">
+                        <li>
+                            <p>Project Presentation at MIT, Alandi</p>
+                            <img src="p1.jpg" alt="presentation Image" style="width: 330px;">
+                        </li>
+                        <li>
+                            <p>Presented our camp's activities to dignitaries</p>
+                            <img src="p2.jpg" alt="presentation Image" style="width: 400px;">
+                        </li>
+                        <li>
+                            <p>Led Eyantra lab orientation for first-year students</p>
+                            <img src="p3.jpg" alt="presentation Image" style="width: 400px;">
+                        </li>
+                    </ul>
+                </li>
+                <!-- Add other non-technical skills -->
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

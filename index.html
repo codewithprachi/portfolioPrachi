@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss.Prachi Devram</title>
+    <link rel="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        }
+body{
+    background-color: rgb(5, 31, 72);
+    color: white;
+    font-family: font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(25, 25, 83);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(138, 138, 245);
+    font-size: 1.01rem;
+}
+ul li ul.dropdown-content{
+    background-color: blueviolet;
+}
+ul li ul .dropdown-content li{
+    float: none;
+}
+
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    margin: 80px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.rightSection img{
+    width: 80%;
+    margin: 20px 0;
+}
+.leftSection{
+    font-size: 3rem;
+    margin: 30px 0;
+    align-items: center;
+}
+.purple{
+    color: blueviolet;
+}
+#element{
+    color: blueviolet;
+}
+footer{
+    background-color: #0e0e1a;
+}
+.footer{
+    display: flex;
+    padding: 0px 0px;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+
+}
+.footer > div{
+    width: 223px;
+}
+footer .footer-rights{
+    text-align: center;
+    color: grey;
+    padding: 12px;
+}
+
+ul li .dropdown-content {
+    display: none;
+    background-color: rgb(35, 35, 135);
+}
+
+/* Style for list items within the dropdown content */
+ul li .dropdown-content li {
+    float: none;
+}
+
+/* When hovering over the parent list item, display the dropdown content */
+ul li:hover .dropdown-content {
+    display: block; /* or inline, depending on your layout */
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Prachi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html" id="homeLink">Home</a></li>
+                 
+                    <li><a href="./Prachi_Devram.pdf">My Resume</a></li>
+                    
+                    <!-- <li><a href="/">Education</a> -->
+                        <li><a href="education.html" id="educationLink">Education</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="education.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Skills</a> -->
+                        <li><a href="Skills.html" id="SkillsLink">Skills</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Skills.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <!-- <li><a href="/">Projects</a> -->
+                        <li><a href="Projects.html" id="ProjectsLink">Projects</a>
+                            <ul class="dropdown-content">
+                                <!-- <li><a href="Projects.html">View Details</a></li> -->
+                            </ul>
+                        </li>
+                    </li>
+                    <li><a href="#">About me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <div id="nav"></div> -->
+        <section class="firstSection"> 
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Prachi</span>
+                <div>and I am a Creative</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="photo.jpg">
+            </div>       
+        </section>
+        <section class="secondSection">
+            <h1></h1>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Prachi's Portfolio</h3>
+            </div>
+            <!-- <footer> -->
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> prachidevram9720@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 79729 31217</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+                </div>
+            
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/prachi-devram-211136206"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- <a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a> -->
+                    <!-- Add other social media links with their respective Font Awesome classes -->
+                </div>
+            
+                <div class="copyright">
+                    <p>&copy; 2023 Prachi Devram</p>
+                </div>
+            
+                <div class="navigation">
+                    <a href="#home">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                    <!-- Add links to different sections of your portfolio -->
+                </div>
+            
+                <div class="call-to-action">
+                    <p>Get in touch to discuss your project!</p>
+                </div>
+            </footer>
+            
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['Entc Engineer', 'Web Developer','Software Developer'],
+        typeSpeed: 50,
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- <script>
+        // Fetching and including the navigation bar using JavaScript
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav').innerHTML = data;
+            })
+            .catch(error => {
+                console.log('Error fetching navigation bar:', error);
+            });
+    </script> -->
+</body>
+</html>
